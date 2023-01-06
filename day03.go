@@ -82,4 +82,20 @@ func main() {
 
 	fmt.Println(res)
 
+	xx := make(map[int]bool, 10)
+
+	for i := 0; i < 10; i++ {
+		xx[i] = true
+	}
+
+	rms := []int{}
+
+	fmt.Println(xx)
+
+	for k := range xx {
+		rms = append(rms, k)
+	}
+
+	fmt.Println(rms)
+
 }
